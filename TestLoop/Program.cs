@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TestLoop
 {
@@ -19,7 +15,7 @@ namespace TestLoop
             long average = 0;
             long maxCount = 1000000;
 
-            FileStream filestream = new FileStream("out.txt", FileMode.Append);
+            FileStream filestream = new FileStream("../../out.txt", FileMode.Append);
             var streamwriter = new StreamWriter(filestream);
             streamwriter.AutoFlush = true;
             Console.SetOut(streamwriter);
